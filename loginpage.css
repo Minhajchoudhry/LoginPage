@@ -26,8 +26,6 @@ border-radius: 5px;
 backdrop-filter: blur(20px); 
 box-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-
-
 .container1{
     display: flex;
     justify-content: center;
@@ -66,14 +64,18 @@ input::placeholder{
     font-size: 0.80rem;
     font-weight: 510;
     color: white;
+    cursor: pointer;
 }
 p{
     font-size: 0.80rem;
     font-weight: 530;
     color: white;
+    transition: 0.4s;
 }   
 p:hover{
     text-decoration: underline;
+    color: red;
+    cursor: pointer;
 }
 
 .button{
@@ -90,7 +92,13 @@ p:hover{
     border: none;
     border-radius: 20px;
     background-color: white;
-margin: 10px;
-cursor: pointer;
-background-color: rgb(241, 243, 243);
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(241, 243, 243);
+    transition: 0.4s;
+}
+.button button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    background-color: rgb(17, 20, 20);
+    color: white;
 }
